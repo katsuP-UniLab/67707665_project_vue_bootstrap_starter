@@ -1,10 +1,15 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
-import store from './store'
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "./router";
+import store from "./store";
 
-import "bootstrap/dist/css/bootstrap.css" ;  // bootstrap 5 css
-import "bootstrap/dist/js/bootstrap.bundle.js" ;  // bootstrap 5 javaScript
+import "bootstrap/dist/css/bootstrap.css"; // bootstrap 5 css
+import "bootstrap/dist/js/bootstrap.bundle.js"; // bootstrap 5 javaScript
 
+// createApp(App).use(store).use(router).mount("#app");
 
-createApp(App).use(store).use(router).mount('#app')
+const app = createApp(App);
+
+app.use(store);
+app.use(router);
+app.mount("#app");
