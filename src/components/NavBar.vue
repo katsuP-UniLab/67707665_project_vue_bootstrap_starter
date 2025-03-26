@@ -26,8 +26,11 @@
           <li>
             <a href="/product" class="nav-link px-2 text-white">Product</a>
           </li>
+          <li>
+            <a href="/prod_jewel" class="nav-link px-2 text-white">Product_Jewel</a>
+          </li>
           <li><a href="/about" class="nav-link px-2 text-white">About</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Contact</a></li>
+          <li><a href="/customer" class="nav-link px-2 text-white">Customer</a></li>
         </ul>
 
         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
