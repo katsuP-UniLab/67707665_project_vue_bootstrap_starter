@@ -58,7 +58,7 @@ export default {
           <td>{{ p.description }}</td>
           <td>${{ p.price }}</td>
           <td style="text-transform: capitalize;">{{ p.category }}</td>
-          <td><div :style="ClassGen(p.image)"></div></td>
+          <td class="img-holder"><div :style="ClassGen(p.image)"></div></td>
         </tr>
       </tbody>
     </table>
@@ -66,8 +66,11 @@ export default {
 </template>
 
 <style>
-tr > td > div {
-  width: 150px;
+table * {
+  text-align: center;
+}
+
+tr > td.img-holder > div {
   aspect-ratio: 1/1;
   background-position: center !important;
   background-repeat: no-repeat !important;
