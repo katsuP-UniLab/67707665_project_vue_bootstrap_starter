@@ -9,6 +9,7 @@ import CustomerView from "@/views/CustomerView.vue";
 import RegisterView from "@/views/Users/RegisterView.vue";
 import LoginView from "@/views/Users/LoginView.vue";
 import ProductTableView from "@/views/ProductTableView.vue";
+import ShowProdView from "@/views/ShowProdView.vue";
 
 const routes = [
   {
@@ -50,6 +51,11 @@ const routes = [
     path: "/login",
     name: "login",
     component: LoginView,
+  },
+  {
+    path: "/allprod",
+    name: "allprod",
+    component: ShowProdView,
   },
 ];
 
